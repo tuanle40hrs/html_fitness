@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #1D1D1C;
+}
+h1 {
+	text-align: center;
+	clear: left;
+}
+/*Style for container centers the page and sets the element width*/
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Style for header specifies top and bottom margins, background color, rounded border, shadow, and alignment*/
+header {
+	margin-top: 0.2em;
+	background-color: #FFFFFF;
+	border-radius: 0.5em;
+	text-align: center;
+}
+nav {
+	font-family: Georgia, "Time New Roman", serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+/* Style specifies padding and margin for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins
+and padding for list items within the navigation */
+nav li {
+	background-color: #009933;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.video{
+	padding: 1em;
+	text-align: center;
+	
+}
+video{
+	border: 0.5em, ridge #FFFFFF;
+	height: auto;
+	max-width: 100%;
+}
+.openhours {
+	border: solid 2px green;
+	display: inline-block;
+	padding: 0.2em 0.5em 0.3em 0.5em;
+	background-color: antiquewhite;
+	color: darkblue;
+	border-top-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+img {
+	/*	Style to create a fluid image*/
+	max-width: 100%;
+}
+/* Style displays the mobile class*/
+.mobile {
+	display: inline;
+}
+/* Style displays the desktop class*/
+.desktop {
+	display: none;
+}
+/* Style for the main element specifies a block display, text properties, margins, padding, rounded corners,
+and border properties */
+main {
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: #9D9D93;
+	color: #FFFFFF;
+	border-top: solid 0.2em #009933;
+	border-bottom: solid 0.2em #009933;
+	border-radius: 2em 0 2em 0;
+}
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+	color: white;
+	overflow: auto;
+}
+footer a{
+	color: white;
+}
+/* Style for aside elements*/
+aside {
+	font-style: italic;
+	background-color: #fff;
+	border-radius: 0 5em 5em 5em;
+	box-shadow: 1em 1em 1em #4C4C4D;
+	padding: 1.5em;
+	margin: 1em;
+	color: blue;
+}
+article {
+	background-color: #C1D9CA;
+	float: left;
+	margin: 0.5%;
+	padding: 0.5%;
+	text-align: center;
+	width: 31%;
+}
+main ariticle img {
+	border: solid 0.1em #1D1D1C;
+	margin-left: auto;
+	margin-right: auto;
+}
+#copyright{
+	float: left;
+	margin-top: 2em;
+	width: 80%;
+/*	overflow: auto;*/
+}
+#social{
+	float: right;
+	width: 20%;
+}
+#social img{
+	padding: 0.5em;
+}
+@media only screen and (min-width:481px) {
+nav li {
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	width: 18%;
+	white-space: nowrap;
+}
+main a {
+	display: block;
+	color: white;
+	background-color: #9D9D93;
+	border-radius: 1em;
+	font-weight: bold;
+	padding: 0;
+	text-decoration: none;
+}
+}
+.items {
+	display: block;
+	list-style-position: inside;
+	margin-bottom: 5em;
+}
+/* Style specifies a font weight and top margin for description list terms */
+dt {
+	font-weight: bold;
+	margin-top: 0.7em;
+}
+/* Style rule for input, select , and textarea form element*/
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+/* Style rule for label elemtn*/
+label {
+	display: block;
+}
+/* Style rule for unordered list within a form*/
+form ul {
+	list-style-type: none;
+}
+/* Style rule for chkbx class*/
+.chkbx {
+	display: inline-block;
+}
+
+/* Media query for tablet viewpoprt target screen size with a minimum width of 481px*/
+@media all and (min-width:660px) and (max-width:830px) {
+/* Style specifies a horizontal display for navigation links*/
+nav li {
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	width: 18%
+}
+/* Style specifies clear and top margin properties for the main element*/
+main {
+	clear: left;
+	margin-top: 4em;
+}
+/*	Style specifies to hide the mobile class */
+.mobile {
+	display: none;
+}
+/*	Style specifies to display the desktop class*/
+.desktop {
+	display: inline;
+}
+.equip {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.tablet {
+	display: block;
+}
+figure figcaption {
+	margin-top: -2.3em;
+	opacity: 0.3;
+	background-color: #2A2A2A;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	padding: 1em 1em;
+}
+table {
+	border: 0.1em solid #000000;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	background-color: bisque;
+}
+th, td {
+	border: 0.1em solid #000000;
+	padding: 1em;
+}
+th {
+	background-color: #1D1D1C;
+	color: #FFFFFF;
+}
+td {
+	color: #000000;
+}
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	color: #FFFFFF;
+}
+label {
+	float: left;
+	padding-right: 0.5em;
+	text-align: right;
+	width: 10em;
+}
+	.btn{
+		margin-left: 12em;
+	}
+}
+
+/* Media query for desktop viewpoint targets screens with a minimun width of 769*/
+@media only screen and (min-width: 830px) {
+/*	Style specifies a width for container*/
+#container {
+	width: 80%;
+}
+/*	Style speicfies marigin and padding for the unorder list within the nav*/
+nav ul {
+	margin: 0;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}
+/*	Style for navigation list items specifies a border radius, border, margin, width, and padding*/
+nav li {
+	border-radius: 0;
+	border-top: solid #000000;
+	border-bottom: solid #000000;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: 20%;
+}
+/*	Style for navigation links specifies display and padding*/
+nav li a {
+	display: inline-block;
+	padding: 0.7em;
+}
+nav li a:link {
+	color: #FFFFFF;
+}
+nav li a:visited {
+	color: #FFFF99;
+}
+nav li a:active {
+	color: #6600CC;
+}
+.desktop {
+	display: inline-block;
+}
+.mobile {
+	display: none;
+}
+	form{
+		background-color: #fff;
+		color: #000000;
+		padding: 1em;
+	}
+	form p{
+		color: #000000;
+	}
+	label {
+	float: left;
+	padding-right: 0.5em;
+	text-align: right;
+	width: 10em;
+}
+	form ul {
+	list-style-type: none;
+}
+	.btn{
+		display: inline-block;
+	}
+}
